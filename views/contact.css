@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+  }
+  .nav{
+    background-color: rgb(63, 29, 41);
+    color: white;
+    font-size: 34px;
+}
+.nav:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+    position: relative;
+}
+  .container::before{
+    content: " ";
+    background:url('/static/close-up-blank-old-concrete-wall_23-2147856094.jpg')no-repeat center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  .box{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      width: 70%;
+      border-radius: 25px;
+      margin-bottom: 7%;
+  }
+ 
+  .main{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .main p{
+      font-size: 30px;
+      color:rgb(26, 24, 24);
+      text-align: center;
+  }
+  .form{
+    padding: 6px;
+  }
+  .form input{
+      text-decoration: none;
+      background-color: rgb(228, 218, 218);
+      border: none;
+      padding: 10px;
+      border-radius: 100px;
+      font-weight: bolder;
+  }
+ .form textarea{
+      text-decoration: none;
+      background-color: rgb(228, 218, 218);
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+      font-weight: bolder;
+  }
+  .form input[type=submit]{
+       color:white;
+       background-color: green;
+       width: 90px;
+  }
+  .form input[type=submit]:hover{
+      border:3px groove black;
+      color: black;
+  }
+  .joinus{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    width: 100%;
+    background-color: white;
+
+  }
+  .joinus a .img1{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+  }
+  .joinus a .img2{
+    width: 70px;
+    height: 50px;
+    margin: 4px;
+  }
+  .joinus a .img3{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+  }
+  .foot{
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   
+  }
+  @media screen and (max-width:800px){
+      .box{
+          flex-direction: column;
+      }
+  }

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+body::before{
+    content: " ";
+      background-color: #333333;
+      width: 100%;
+      height:100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      opacity: 0.6;
+}
+.nav{
+    background-color: rgb(63, 29, 41);
+    color: white;
+    font-size: 34px;
+}
+.nav:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.box p{
+    font-size: 34px;
+}
+.box input, .box textarea {
+      width: 100%;
+      padding: 0.3rem;
+      border-radius: 13px;
+      font-size: 1.1rem;
+      border: 1px solid rgb(56, 29, 38);
+}
+.box{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.box input[type="submit"]{
+    display: block;
+    width:80px;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+.box input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.box input[type="button"]{
+    margin-top: 3px;
+    width:60px;
+}
+.box label{
+    font-size: 1.2rem;
+}
+.box form{
+    width:50%;
+}
+.joinus{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    width: 100%;
+    background-color: white;
+
+  }
+  .joinus a .img1{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+  }
+  .joinus a .img2{
+    width: 70px;
+    height: 50px;
+    margin: 4px;
+  }
+  .joinus a .img3{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+  }
+  .foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+   
+  }
